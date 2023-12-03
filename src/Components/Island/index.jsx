@@ -1,11 +1,11 @@
-import { useGLTF } from "@react-three/drei"
 import Ground from "./Ground"
+import Trees from "./Trees"
 
 const Island = () => {
 
-
     return(
         <>
+            <Trees/>
             <Ground/>
         </>
     )
