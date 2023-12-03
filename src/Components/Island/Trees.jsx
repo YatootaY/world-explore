@@ -1,5 +1,4 @@
 import { useGLTF, Center, Clone } from "@react-three/drei"
-import { useControls } from "leva"
 
 const Trees = () => {
 
@@ -7,13 +6,6 @@ const Trees = () => {
     const palm2 = useGLTF("/Island/palm_detailed_short.gltf")
     const palm3 = useGLTF("/Island/palm_long.gltf")
     const palm4 = useGLTF("/Island/palm_short.gltf")
-
-    const {position} = useControls({
-        position: {
-            value: {x:0, z:0},
-            step: 0.1
-        }
-    })
 
     return(
         <>
