@@ -1,9 +1,13 @@
-
 const Ground = () => {
 
     return(
         <>
             <group>
+                <mesh scale={[1.6,2,1.6]} position={[3.33, 0.3, -0.89]}>
+                    <cylinderGeometry args={[1,1.2,0.2,6]}/>
+                    <meshStandardMaterial color={"#4eaa70"} attach="material-1"/>
+                    <meshStandardMaterial color={"#d9d8be"} attach="material-0"/>
+                </mesh>
                 <mesh scale={[1.4,1,1.4]} position={[-2.6, 0.1, -3.45]}>
                     <cylinderGeometry args={[1,1.3,0.2,6]}/>
                     <meshStandardMaterial color={"#4eaa70"} attach="material-1"/>
@@ -14,7 +18,7 @@ const Ground = () => {
                     <meshStandardMaterial color={"#4eaa70"} attach="material-1"/>
                     <meshStandardMaterial color={"#d9d8be"} attach="material-0"/>
                 </mesh>
-                <mesh scale={[2,1,2]} position={[3.4, 0.1, -1]}>
+                <mesh scale={[2.5,1,2.5]} position={[3.37, 0.1, -0.9]}>
                     <cylinderGeometry args={[1,1.3,0.2,6]}/>
                     <meshStandardMaterial color={"#4eaa70"} attach="material-1"/>
                     <meshStandardMaterial color={"#d9d8be"} attach="material-0"/>
@@ -35,10 +39,10 @@ const Ground = () => {
                     <meshStandardMaterial color={"#d9d8be"} attach="material-0"/>
                 </mesh>
             </group>
-            <mesh scale={[20,1,20]} position-y={-0.5}>
+            {/* <mesh scale={[50,1,50]} position-y={-0.5}>
                 <boxGeometry/>
                 <meshStandardMaterial color={"#47c4c7"}/>
-            </mesh>
+            </mesh> */}
         </>
     )
 }

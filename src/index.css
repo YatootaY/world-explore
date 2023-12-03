@@ -11,4 +11,5 @@ body,
 
 canvas{
   touch-action: none;
+  background-color: #47c4c7;
 }

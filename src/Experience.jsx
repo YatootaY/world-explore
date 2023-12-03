@@ -1,11 +1,10 @@
-import Light from "./Components/Light"
 import Island from "./Components/Island"
+import { Environment } from "@react-three/drei"
 
 const Experience = () => {
 
     return(
         <>
-            <Light/>
             <Island/>
         </>
     )
