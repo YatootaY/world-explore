@@ -39,10 +39,10 @@ const Ground = () => {
                     <meshStandardMaterial color={"#d9d8be"} attach="material-0"/>
                 </mesh>
             </group>
-            {/* <mesh scale={[50,1,50]} position-y={-0.5}>
+            <mesh scale={[50,1,50]} position-y={-0.5}>
                 <boxGeometry/>
                 <meshStandardMaterial color={"#47c4c7"}/>
-            </mesh> */}
+            </mesh>
         </>
     )
 }

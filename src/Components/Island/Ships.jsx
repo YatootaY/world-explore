@@ -33,7 +33,7 @@ const Ships = () => {
             </mesh>
 
             <mesh
-                position={[position.x,1,position.z]} scale={0.5} rotation-y={Math.PI - 0.5} rotation-z={Math.PI/ 6}
+                position={[0.6,1,-1.1]} scale={0.5} rotation-y={Math.PI - 0.3} rotation-z={Math.PI/ 10} rotation-x={0.1}
             >
                 <Center>
                     <Clone object={ship3.scene}/>
