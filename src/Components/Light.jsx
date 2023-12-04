@@ -9,7 +9,7 @@ const Light = () => {
                 color='#eeaf61'
                 intensity={1}
             />
-            <ambientLight intensity={0.5}/>
+            <ambientLight intensity={0.4}/>
         </>
     )
 }

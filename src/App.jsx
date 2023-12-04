@@ -19,7 +19,7 @@ const App = () => {
         <OrbitControls/>
         <Light/>
         <Sky
-          sunPosition={[10,0.2,10]}
+          sunPosition={[10,0.1,10]}
           mieCoefficient={0.001}
           mieDirectionalG={10}
           rayleigh={4}
