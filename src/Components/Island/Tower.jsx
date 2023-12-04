@@ -1,5 +1,4 @@
-import { useGLTF, Clone, Center } from "@react-three/drei"
-import { useControls } from "leva"
+import { useGLTF, Center } from "@react-three/drei"
 
 const Tower = () => {
 
@@ -11,7 +10,7 @@ const Tower = () => {
                 position={[3.2,1.8,-0.9]} scale={0.7}
             >
                 <Center>
-                    <Clone object={tower.scene}/>
+                    <primitive object={tower.scene}/>
                 </Center>
             </mesh>
         </>

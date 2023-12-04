@@ -1,4 +1,4 @@
-import { useGLTF, Center, Clone } from "@react-three/drei"
+import { useGLTF, Center } from "@react-three/drei"
 
 const Trees = () => {
 
@@ -13,7 +13,7 @@ const Trees = () => {
                 position={[-2.7,1.25,-3.4]}
             >
                 <Center>
-                    <Clone object={palm1.scene}/>
+                    <primitive object={palm1.scene}/>
                 </Center>
             </mesh>
 
@@ -21,7 +21,7 @@ const Trees = () => {
                 position={[5.2,1,-1.9]} rotation-y={-Math.PI/4}
             >
                 <Center>
-                    <Clone object={palm2.scene}/>
+                    <primitive object={palm2.scene}/>
                 </Center>
             </mesh>
 
@@ -29,7 +29,7 @@ const Trees = () => {
                 position={[-6.1,1,0.9]}
             >
                 <Center>
-                    <Clone object={palm4.scene}/>
+                    <primitive object={palm4.scene}/>
                 </Center>
             </mesh>
 
@@ -37,7 +37,7 @@ const Trees = () => {
                 position={[-1.1,1.2,4.7]}
             >
                 <Center>
-                    <Clone object={palm3.scene}/>
+                    <primitive object={palm3.scene}/>
                 </Center>
             </mesh>
         </>

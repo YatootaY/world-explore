@@ -1,5 +1,5 @@
 import { Canvas } from "@react-three/fiber"
-import { OrbitControls, Environment } from "@react-three/drei"
+import { OrbitControls, Environment, Stage } from "@react-three/drei"
 import Experience from "./Experience"
 import Light from "./Components/Light"
 import { useControls } from "leva"
@@ -24,6 +24,7 @@ const App = () => {
           <color args={["#4e6ba4"]} attach="background"/>
         </Environment>
         <Experience/>
+        
       </Canvas>
     </>
   )

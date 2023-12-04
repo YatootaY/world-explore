@@ -1,5 +1,4 @@
-import { useGLTF, Center, Clone } from "@react-three/drei"
-import { useControls } from "leva"
+import { useGLTF, Center } from "@react-three/drei"
 
 const Ships = () => {
 
@@ -15,7 +14,7 @@ const Ships = () => {
                 position={[-8.9,2.2,1.2]} scale={0.8} rotation-z={Math.PI/25}
             >
                 <Center>
-                    <Clone object={ship1.scene}/>
+                    <primitive object={ship1.scene}/>
                 </Center>
             </mesh>
 
@@ -23,7 +22,7 @@ const Ships = () => {
                 position={[7.1,2.2,4.3]} rotation-y={-Math.PI/4} scale={0.8} rotation-z={-Math.PI/25}
             >
                 <Center>
-                    <Clone object={ship2.scene}/>
+                    <primitive object={ship2.scene}/>
                 </Center>
             </mesh>
 
@@ -31,7 +30,7 @@ const Ships = () => {
                 position={[0.6,1,-1.1]} scale={0.5} rotation-y={Math.PI - 0.3} rotation-z={Math.PI/ 10} rotation-x={0.1}
             >
                 <Center>
-                    <Clone object={ship3.scene}/>
+                    <primitive object={ship3.scene}/>
                 </Center>
             </mesh>
 
@@ -39,7 +38,7 @@ const Ships = () => {
                 position={[-1.8,0.1,-5.3]} scale={0.8} rotation-y={-Math.PI/10} rotation-x={-Math.PI/16}
             >
                 <Center>
-                    <Clone object={boat1.scene}/>
+                    <primitive object={boat1.scene}/>
                 </Center>
             </mesh>
 
@@ -47,7 +46,7 @@ const Ships = () => {
                 position={[1.3,0.1,-9.5]} scale={0.8}
             >
                 <Center>
-                    <Clone object={boat2.scene}/>
+                    <primitive object={boat2.scene}/>
                 </Center>
             </mesh>
             
