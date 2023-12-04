@@ -1,4 +1,10 @@
+import { useControls } from "leva"
+
 const Ground = () => {
+
+    const {groundColor} = useControls({
+        groundColor: "#4e6ba4"
+    })
 
     return(
         <>
@@ -39,10 +45,16 @@ const Ground = () => {
                     <meshStandardMaterial color={"#d9d8be"} attach="material-0"/>
                 </mesh>
             </group>
-            <mesh scale={[50,1,50]} position-y={-0.5}>
-                <boxGeometry/>
-                <meshStandardMaterial color={"#47c4c7"}/>
-            </mesh>
+            <group scale={14}>
+                <mesh rotation-x={-Math.PI/2}>
+                    <circleGeometry args={[1]}/>
+                    <meshStandardMaterial color={groundColor}/>
+                </mesh>
+                <mesh rotation-z={Math.PI}>
+                    <sphereGeometry args={[1,32,16,0,Math.PI*2,0,Math.PI/2]}/>
+                    <meshStandardMaterial color={groundColor}/>
+                </mesh>
+            </group>
         </>
     )
 }
