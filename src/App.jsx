@@ -6,10 +6,6 @@ import { useControls } from "leva"
 
 const App = () => {
 
-  const {colorEnv} = useControls({
-    colorEnv: "#4e6ba4"
-  })
-
   return(
     <>
       <Canvas
@@ -25,7 +21,7 @@ const App = () => {
         <Environment
           background
         >
-          <color args={[colorEnv]} attach="background"/>
+          <color args={["#4e6ba4"]} attach="background"/>
         </Environment>
         <Experience/>
       </Canvas>
