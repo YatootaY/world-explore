@@ -1,5 +1,4 @@
 import { useGLTF, Center, Clone } from "@react-three/drei"
-import { useControls } from "leva"
 
 
 const Cannons = () => {
@@ -8,17 +7,6 @@ const Cannons = () => {
     const cannon2 = useGLTF("/Island/cannonLarge.gltf")
     const cannon3 = useGLTF("/Island/cannonMobile.gltf")
     const cannonBall = useGLTF("/Island/cannonBall.gltf")
-
-    const {position, rotation} = useControls({
-        position: {
-            value: {x: 0, z: 0},
-            step: 0.1
-        },
-        rotation: {
-            value: 0,
-            step: 0.1
-        }
-    })
 
     return(
         <>
