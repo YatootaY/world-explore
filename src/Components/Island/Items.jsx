@@ -1,9 +1,8 @@
-import { useGLTF, Center } from "@react-three/drei"
+import { useGLTF, Center, Clone } from "@react-three/drei"
 
 const Items = () => {
 
     const bottle1 = useGLTF("/Island/bottle.gltf")
-    const bottle2 = useGLTF("/Island/bottleLarge.gltf")
     const chest = useGLTF("/Island/chest.gltf")
     const hole = useGLTF("/Island/hole.gltf")
     const paddle = useGLTF("/Island/paddle.gltf")
@@ -30,7 +29,7 @@ const Items = () => {
             </mesh>
 
             <mesh
-                position={[-1.8,0.2,-3.9]} rotation-y={rotation}
+                position={[-1.8,0.2,-3.9]}
             >
                 <Center>
                     <primitive object={paddle.scene}/>
@@ -65,15 +64,15 @@ const Items = () => {
                 position={[-0.5,0.32,1.4]} scale={0.5}
             >
                 <Center>
-                    <primitive object={bottle1.scene}/>
+                    <Clone object={bottle1.scene}/>
                 </Center>
             </mesh>
 
             <mesh
-                position={[position.x,0.25,position.z]} scale={0.5} rotation-x={Math.PI/2}
+                position={[-0.7,0.25,1.4]} scale={0.5} rotation-x={Math.PI/2}
             >
                 <Center>
-                    <primitive object={bottle2.scene}/>
+                    <Clone object={bottle1.scene}/>
                 </Center>
             </mesh>
         </>
