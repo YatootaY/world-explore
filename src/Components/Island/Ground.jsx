@@ -1,11 +1,6 @@
-import { useControls } from "leva"
 import { MeshReflectorMaterial } from "@react-three/drei"
 
 const Ground = () => {
-
-    const {groundColor} = useControls({
-        groundColor: "#506ba1"
-    })
 
     return(
         <>
@@ -50,7 +45,7 @@ const Ground = () => {
             <mesh position-y={0} rotation-x={-Math.PI/2}>
                 <circleGeometry args={[100]}/>
                 <MeshReflectorMaterial 
-                    color={groundColor}
+                    color={"#506ba1"}
                     resolution={128}
                 />
             </mesh>
