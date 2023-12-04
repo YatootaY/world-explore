@@ -9,13 +9,6 @@ const Ships = () => {
     const boat1 = useGLTF("/Island/boat_large.gltf")
     const boat2 = useGLTF("/Island/boat_small.gltf")
 
-    const {position} = useControls({
-        position:{
-            value: {x:-1.8,z:-4.7},
-            step: 0.1
-        }
-    })
-
     return(
         <>
             <mesh

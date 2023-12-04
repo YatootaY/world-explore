@@ -18,7 +18,7 @@ const Trees = () => {
             </mesh>
 
             <mesh
-                position={[3.3,1.3,0.3]}
+                position={[5.2,1,-1.9]} rotation-y={-Math.PI/4}
             >
                 <Center>
                     <Clone object={palm2.scene}/>
