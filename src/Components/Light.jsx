@@ -5,9 +5,9 @@ const Light = () => {
     return(
         <>
             <directionalLight
-                position={[4,4,1]}
+                position={[10,2,10]}
                 color='#eeaf61'
-                intensity={1}
+                intensity={2}
             />
             <ambientLight intensity={0.8}/>
         </>

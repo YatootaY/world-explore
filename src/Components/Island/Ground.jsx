@@ -1,8 +1,15 @@
+import { useControls } from "leva"
+import { MeshReflectorMaterial } from "@react-three/drei"
+
 const Ground = () => {
+
+    const {groundColor} = useControls({
+        groundColor: "#506ba1"
+    })
 
     return(
         <>
-            <group receiveShadow>
+            <group>
                 <mesh scale={[1.6,2,1.6]} position={[3.33, 0.3, -0.89]}>
                     <cylinderGeometry args={[1,1.2,0.2,6]}/>
                     <meshStandardMaterial color={"#4eaa70"} attach="material-1"/>
@@ -40,9 +47,12 @@ const Ground = () => {
                 </mesh>
             </group>
 
-            <mesh position-y={-0.5} receiveShadow>
-                <boxGeometry args={[50,1,50]}/>
-                <meshBasicMaterial color={"#506ba1"}/>
+            <mesh position-y={0} rotation-x={-Math.PI/2}>
+                <circleGeometry args={[100]}/>
+                <MeshReflectorMaterial 
+                    color={groundColor}
+                    resolution={128}
+                />
             </mesh>
         </>
     )

@@ -1,5 +1,5 @@
 import { Canvas } from "@react-three/fiber"
-import { OrbitControls, Environment, Stage } from "@react-three/drei"
+import { OrbitControls, Environment, Stars, Sky } from "@react-three/drei"
 import Experience from "./Experience"
 import Light from "./Components/Light"
 import { useControls } from "leva"
@@ -18,11 +18,12 @@ const App = () => {
       >
         <OrbitControls/>
         <Light/>
-        <Environment
-          background
-        >
-          <color args={["#4e6ba4"]} attach="background"/>
-        </Environment>
+        <Sky
+          sunPosition={[10,0.2,10]}
+          mieCoefficient={0.001}
+          mieDirectionalG={10}
+          rayleigh={4}
+        />
         <Experience/>
         
       </Canvas>
