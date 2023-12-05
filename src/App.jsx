@@ -1,7 +1,8 @@
 import { Canvas } from "@react-three/fiber"
-import { Sky, ScrollControls } from "@react-three/drei"
+import { Sky, ScrollControls, Scroll } from "@react-three/drei"
 import Experience from "./Experience"
 import Light from "./Components/Light"
+import Overlay from "./Components/Overlay"
 
 const App = () => {
 
@@ -17,6 +18,9 @@ const App = () => {
         />
         <ScrollControls pages={6} damping={0}>
           <Experience/>
+          <Scroll html>
+            <Overlay/>
+          </Scroll>
         </ScrollControls>
         
       </Canvas>
