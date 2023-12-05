@@ -4,11 +4,13 @@ import Experience from "./Experience"
 import Light from "./Components/Light"
 import Overlay from "./Components/Overlay"
 import { Suspense } from 'react'
+import Header from "./Components/Header"
 
 const App = () => {
 
   return(
     <>
+      <Header/>
       <Canvas>
         <Light/>
         <Suspense fallback={null}>
