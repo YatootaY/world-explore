@@ -57,7 +57,7 @@ const Overlay = () => {
                 <p style={{marginBottom: "30vh"}}>Living in a castle will give you a premium experience</p>
             </Section>
             <Section opacity={sec5Opacity}>
-                <h2>Best Transpotation</h2>
+                <h2>Best Transportation</h2>
                 <p style={{marginBottom: "40vh"}}>Two pirate ships are on standby 24/7 to serve you</p>
             </Section>
             <Section opacity={sec6Opacity}>
