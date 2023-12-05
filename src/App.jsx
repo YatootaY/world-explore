@@ -15,7 +15,7 @@ const App = () => {
           mieDirectionalG={10}
           rayleigh={4}
         />
-        <ScrollControls pages={7} damping={0}>
+        <ScrollControls pages={6} damping={0}>
           <Experience/>
         </ScrollControls>
         
