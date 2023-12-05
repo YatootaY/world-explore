@@ -19,8 +19,8 @@ const Ships = () => {
         boat2Ref.current.position.y += Math.sin(elapsedTime * 1.5) * 0.001
         ship1Ref.current.rotation.z = Math.sin(elapsedTime) * 0.001
         ship1Ref.current.position.z += Math.sin(elapsedTime * 0.5) * 0.002
-        ship1Ref.current.position.y += Math.sin(elapsedTime * 2) * 0.002
-        ship2Ref.current.position.y += Math.sin(elapsedTime * 3) * 0.002
+        ship1Ref.current.position.y += Math.sin(elapsedTime * 2) * 0.003
+        ship2Ref.current.position.y += Math.sin(elapsedTime * 3) * 0.003
     })
 
     return(
