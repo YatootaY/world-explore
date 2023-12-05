@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+
 html,
 body,
 #root{
@@ -7,8 +9,31 @@ body,
   width: 100%;
   height: 100%;
   user-select: none;
+  font-family: "Akaya Kanadaka";
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover{
+  text-decoration: underline;
 }
 
 canvas{
   touch-action: none;
+}
+
+::-webkit-scrollbar {
+  width: 1px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: whitesmoke; 
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Set the track color to black */
 }

@@ -1,0 +1,34 @@
+.overlay{
+    width: 100vw;
+}
+
+.section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: rgb(226, 217, 217);
+    background-color: rgba(255, 0, 0, 0);
+}
+
+h1{
+    margin: 0;
+    font-size: 50px;
+    font-weight: normal;
+    text-align: center;
+}
+
+h2{
+    margin: 0;
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+}
+
+p{
+    font-size: 15px;
+    margin: 0;
+    text-align: center;
+}
+
