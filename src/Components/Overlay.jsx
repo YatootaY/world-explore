@@ -42,11 +42,11 @@ const Overlay = () => {
         <div className="overlay">
             <Section opacity={1 - sec1Opacity}>
                 <h1>Welcome Traveller</h1>
-                <p style={{marginBottom: "20vh"}}>Come and rest here on this treasure island</p>
+                <p style={{marginBottom: "20vh"}}>Come and relax on this treasure island</p>
             </Section>
             <Section opacity={sec2Opacity}>
-                <h2>Sword of the Hill</h2>
-                <p style={{marginBottom: "20vh"}}>Mysterious sword left behind by a mysterious pirate</p>
+                <h2>Sword of the Rock</h2>
+                <p style={{marginBottom: "20vh"}}>A mysterious sword left behind by a mysterious pirate</p>
             </Section>
             <Section opacity={sec3Opacity}>
                 <h2>An Island in the middle of nowhere</h2>
@@ -58,11 +58,11 @@ const Overlay = () => {
             </Section>
             <Section opacity={sec5Opacity}>
                 <h2>Best Transpotation</h2>
-                <p style={{marginBottom: "40vh"}}>Two pirate ships stand by 24/7 at your service</p>
+                <p style={{marginBottom: "40vh"}}>Two pirate ships are on standby 24/7 to serve you</p>
             </Section>
             <Section opacity={sec6Opacity}>
                 <h1>See you soon!</h1>
-                <p style={{marginBottom: "70vh"}}>Come and get the unforgetable experience</p>
+                <p style={{marginBottom: "70vh"}}>Come and get the unforgettable experience</p>
             </Section>
         </div>
     )
