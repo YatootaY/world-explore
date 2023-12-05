@@ -6,9 +6,9 @@ const Header = () => {
         <div className="header">
             <h5>Treasure Island</h5>
             <div>
-                <a href="">About</a>
-                <a href="">Booking</a>
-                <a href="">Gallery</a>
+                <a href="#">About</a>
+                <a href="#">Booking</a>
+                <a href="#">Gallery</a>
                 <button>Sign up</button>
                 <button>Login</button>
             </div>

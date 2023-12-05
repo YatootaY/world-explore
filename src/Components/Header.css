@@ -41,6 +41,12 @@
     display: inline-block;
     color: black;
     background-color: whitesmoke;
+    transition-duration: 200ms;
+}
+
+.header button:hover{
+    color: whitesmoke;
+    background-color: black;
 }
 
 @media only screen and (max-width: 800px) {

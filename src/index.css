@@ -17,16 +17,20 @@ a{
   color: inherit;
 }
 
+a:hover{
+  text-decoration: underline;
+}
+
 canvas{
   touch-action: none;
 }
 
 ::-webkit-scrollbar {
-  width: 1px; /* You can adjust the width as needed */
+  width: 1px; 
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(124, 122, 122); /* Make the thumb transparent */
+  background-color: whitesmoke; 
   border-radius: 20px;
 }
 
