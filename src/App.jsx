@@ -13,7 +13,7 @@ const App = () => {
       <Header/>
       <Canvas>
         <Light/>
-        <Suspense fallback={null}>
+        <Suspense>
           <Sky
             sunPosition={[10,0.1,10]}
             mieCoefficient={0.001}
